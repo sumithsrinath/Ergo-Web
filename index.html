@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hedear">
+      <!--Logo  -->
+      <div class="row">
+        <div class="col text-center text-lg-start ps-lg-4">
+          <p class="fw-bold display-4 text-danger">Ergo</p>
+        </div>
+      </div>
+    </section>
+    <section class="body">
+      <!-- Image and Text are in one row as two coloms -->
+      <div class="row justify-content-xl-start">
+        <div class="col-12 col-lg-6 order-md-1 position-relative">
+          <!-- main image -->
+          <img src="assets/travel.jpg" alt="" class="img-fluid" />
+
+          <!-- Image centerd text -->
+          <div class="image-text">
+            <p class="fs-4 text-light text-center">
+              Travel <span class="fw-bold">Protect </span>
+            </p>
+          </div>
+
+          <!-- Image buttons for small size screens -->
+          <div class="image-button d-inline d-lg-none">
+            <div class="row justify-content-center">
+              <div style="width: 250px; height: 40px">
+                <button
+                  type="button"
+                  class="btn btn-danger w-100 h-100"
+                  style="
+                    --bs-btn-font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                  "
+                  onmouseover="addNewOnHover(this)"
+                  onmouseout="resetButtonText(this)"
+                  onclick="gotoaboutpage()"
+                >
+                  Buy Per Trip
+                </button>
+              </div>
+
+              <div style="width: 250px; height: 40px">
+                <button
+                  type="button"
+                  class="btn btn-danger w-100 h-100"
+                  style="
+                    --bs-btn-font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                  "
+                  onmouseover="addNewOnHover2(this)"
+                  onmouseout="resetButtonText2(this)"
+                  onclick="gotoaboutpage()"
+                >
+                  Buy Annual Multi-trip
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Colomn -->
+        <div class="col-12 col-md-6 order-md-2">
+          <!-- Heading one -->
+          <div class="container d-none d-lg-block ps-1">
+            <p class="fs-4 fw-bolder text-danger d-inline">Get Instant Quote</p>
+            <p class="fs-8 fw-medium d-inline ps-2">
+              Affordable Prices, without Covid-19 Coverage
+            </p>
+            <hr class="mt-1" />
+          </div>
+
+          <!-- paragraph with first button -->
+          <div class="ps-1">
+            <div class="fs-4 fw-bold text-secondary mt-0">Per Trip</div>
+            <p class="text-body-emphasis fs-6 mt-2">
+              Per trip travel insurance is ideal if you will not be travelling
+              much over the next 12 months. This per trip plan can be issued for
+              a maximum of up to 182 consecutive days.
+            </p>
+
+            <!-- This button will be dissplay only the large and xl screens -->
+            <div class="btn1 d-none d-lg-block">
+              <div style="width: 250px; height: 40px">
+                <button
+                  type="button"
+                  class="btn btn-danger w-100 h-100"
+                  style="
+                    --bs-btn-font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                  "
+                  onmouseover="addNewOnHover(this)"
+                  onmouseout="resetButtonText(this)"
+                  onclick="gotoaboutpage()"
+                >
+                  Buy Per Trip
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="ps-1 pt-3">
+            <div class="fs-4 fw-bold text-secondary mt-0">
+              Annual Multi-Trip
+            </div>
+            <p class="text-body-emphasis fs-6 mt-2">
+              Means multiple trips over the annual period specified in the
+              policy certificate where each trip shall not exceed 90 consecutive
+              days
+            </p>
+
+            <!-- This button also will be dissplay only the large and xl screens -->
+            <div class="btn2 d-none d-lg-block">
+              <div style="width: 250px; height: 40px">
+                <button
+                  type="button"
+                  class="btn btn-danger w-100 h-100"
+                  style="
+                    --bs-btn-font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                  "
+                  onmouseover="addNewOnHover2(this)"
+                  onmouseout="resetButtonText2(this)"
+                  onclick="gotoaboutpage()"
+                >
+                  Buy Annual Multi-trip
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Last paragraph -->
+
+          <div class="ps-1 pt-3">
+            <p class="fw-semibold">
+              24 Hour Emergency Assistance Hotline
+              <span class="text-danger"> +65 6238 9909 </span>
+            </p>
+
+            <p class="text-body-emphasis fs-6 mt-2">
+              Means multiple trips over the annual period specified in the
+              policy certificate where each trip shall not exceed 90 consecutive
+              days
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <nav
+        class="navbar fixed-bottom bg-secondary text-white d-none d-lg-block"
+        style="width: 100%; height: 10%; margin: 0 auto"
+      >
+        <p class="fw-normal ps-3 pb-0" style="font-size: 13px">
+          ERGO is one of the major insurance groups in Germany and Europe.
+          Worldwide, ERGO is represented in more than 30 countries and
+          concentrates on Europe and Asia. ERGO is part of Munich Re, one of the
+          world’s leading reinsurers and risk carriers.
+        </p>
+      </nav>
+    </section>
+
+    <script>
+      function addNewOnHover(button) {
+        button.innerText = "Buy Per Trip >>";
+      }
+
+      function resetButtonText(button) {
+        button.innerText = "Buy Per Trip";
+      }
+
+      function addNewOnHover2(button) {
+        button.innerText = "Buy Annual Multi Trip >>";
+      }
+
+      function resetButtonText2(button) {
+        button.innerText = "Buy Annual Multi Trip";
+      }
+
+      function gotoaboutpage() {
+        window.location.href = "about.html";
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

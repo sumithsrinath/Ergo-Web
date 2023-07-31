@@ -1,0 +1,83 @@
+/* these styles for home page */
+hr {
+  border-color: rgb(0, 0, 0);
+  height: 4px;
+}
+
+.btn.btn-danger,
+.btn-secondary {
+  border-radius: 0;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.image-button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-buttons > div {
+  margin: 5px;
+}
+
+/* these styles for about page */
+
+body.about {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/travel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.content {
+  max-width: 700px; /* Set the maximum width to prevent it from overflowing on smaller screens */
+  min-width: 310px;
+}
+
+select,
+input {
+  justify-content: center;
+  font-family: sans-serif;
+
+  background-color: #86827f;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  border: 1px solid #000000;
+
+  padding: 5px;
+
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+.custom-bg {
+  background-color: #6c757d20;
+  opacity: 0.75;
+}
+
+.btn-danger:hover {
+  background-color: #dc3545;
+}
+
+.btn-secondary:hover {
+  background-color: #dc3545;
+}
